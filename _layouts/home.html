@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<div class="home">
+  <img src={{ site.avatar_path }} class="avatar"/>
+  <div class="contact-list">
+    {% if site.email %}
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+    {% endif %}
+    {% if site.github_username %}
+      {% include icon-github.html username=site.github_username %}
+    {% endif %}
+  </div>
+</div>
